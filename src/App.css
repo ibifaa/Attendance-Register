@@ -1,11 +1,121 @@
 .App {
   text-align: center;
+  background-color: #667BC6;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  color: #667BC6;
+  padding: 20px;
+  font-weight: 800;
+  font-size: 40px;
 }
+
+.container{
+  width: 100%;
+  text-align: center;
+  
+}
+
+form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  border: none;
+
+}
+.input-div {
+  width: 30%;
+}
+
+input{
+  border: 0px solid;
+  border-right: 5px solid #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+
+thead tr{
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content:space-between;
+  width: 64%;
+  /* margin: 10px auto; */
+  margin-top: 20px;
+ 
+}
+
+tbody tr{
+  /* background-color: #f2f2f2; */
+  display: flex;
+  justify-content:space-between;
+  width: 64%;
+  /* margin: 10px auto; */
+  margin-top: 20px;
+ 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+thead{
+  display: flex;
+  justify-content: center;
+}
+
+tbody{
+  display: flex;
+  justify-content: center;
+}
+
+th, td {
+  border-right: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #667BC6;
+}
+
+tr td{
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  table, th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th, td {
+    box-sizing: border-box;
+  }
+}s
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,5 +144,33 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:600px) {
+  .input-div{
+    width: 100%;
+    margin: 10px auto;
+  }
+  .header{
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  
+  }
+
+  thead tr{
+    width: 90%;
+    /* flex-direction: column; */
+  }
+  tbody tr{
+    width: 90%;
+    /* flex-direction: column; */
+  }
+
+  input{
+    width: 90%;
+    margin: 2px auto;
+    padding: 5px;
   }
 }
